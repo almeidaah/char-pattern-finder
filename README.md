@@ -35,3 +35,8 @@ Por exemplo, quando um processo (programa em execução) ou uma thread(sub progr
 4 - A tarefa T2 ainda tendo bloqueio(r2) solicita um bloqueio no recurso R1(que já está chamando a tarefa T1[passo 1]);
 
 Neste caso as duas tarefas estão bloqueantes até que um dos recursos esteja disponível, e nenhum recurso pode ser liberado até que a tarefa continue, iss ocaracteriza o deadlock(dependência mútua de disponibilidade);
+
+==========================================================================
+
+Q5 - 
+A diferença na execução de uma Stream para uma ParallelStream é que, a implementação de forma paralela permite que o processamento seja dividido entre os processadores da máquina em execução. Se tratando de um processamento de uma coleção, a divisão entre duas Threads tende a agilizar o processamento de uma grande coleção. Vale lembrar que algumas operações do Stream são single thread, então nem sempre a utilização de Streams paralelas resultará em maior desempenho. Outra questão é que o processamento paralelizado estará ligado diretamente aos núcleos da máquina(nº de cores da CPU).
